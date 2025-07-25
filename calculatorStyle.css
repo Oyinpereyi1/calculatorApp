@@ -1,0 +1,156 @@
+*{
+	margin: 20px 0px 0px 0px;
+	padding: 0px;
+}
+
+input{
+	background: transparent;
+	background-color: white;
+	margin: 2px 2px 4px 2px;
+	padding: 4px;
+	cursor: pointer;
+	text-align: right;
+	font-size: 16px;
+	border: 1px solid white;
+	font-weight: bold; 
+	color: black;
+	border: 1px solid black;
+	
+ }
+ 
+body{
+	display: grid;
+	justify-content: center;
+
+	
+}
+
+button{
+	background-color:grey;
+	width: 50px;
+	height: 40px;
+	padding: 4px;
+	font-size: 20px;
+	margin: 4px auto;
+	color: white;
+	border-radius:20%;
+
+}
+
+.container{
+	background-color: white;
+	padding: 4px;
+	border: 1px solid black;
+	border-radius: 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	"input1 input1 input1 input1"
+	"buttonseven buttoneight buttonnine operator3"
+	"buttonfour buttonfive buttonsix operator4"
+	"buttonone buttontwo buttonthree operator1"
+	"buttonzero equaltobutton pointbutton operator2"
+	"clear-button clearbutton clearbutton clearbutton";
+}
+
+.input1{
+	grid-area: input1;
+}
+
+.buttonone{
+	grid-area: buttonone;
+}
+	
+.buttontwo{
+	grid-area: buttontwo;
+}
+
+.buttonthree{
+	grid-area: buttonthree;
+}
+
+.buttonfour{
+	grid-area: buttonfour;
+}
+
+.buttonfive{
+	grid-area: buttonfive;
+}
+
+.buttonsix{
+	grid-area: buttonsix;
+}
+
+.buttonseven{
+	grid-area: buttonseven;
+}
+
+.buttoneight{
+	grid-area: buttoneight;
+}
+
+.buttonnine{
+	grid-area: buttonnine;
+}
+
+.buttonzero{
+	grid-area: buttonzero;
+	grid-row: 5 / 8;
+	height: 90px;
+;
+}
+
+.operator1{
+	grid-area: operator1;
+}
+
+.operator2{
+	grid-area: operator2;
+}
+
+.operator3{
+	grid-area: operator3;
+}
+
+.clearbutton{
+	grid-area: clear-button;
+	width: 108px;
+	grid-column: 3 / 7;
+}
+
+.equaltobutton{
+	grid-area: equaltobutton;
+	grid-row: 5 / 8;
+	height: 90px;
+
+}
+
+.operator4{
+	grid-area: operator4;
+}
+
+.pointbutton{
+	grid-area: pointbutton;
+}
+
+@media screen and (min-width: 736px){
+
+.container{
+	width: 250px;
+	background-color: white;
+	padding: 4px;
+	border: 1px solid black;
+	border-radius: 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	"input1 input1 input1 input1"
+	"buttonseven buttoneight buttonnine operator3"
+	"buttonfour buttonfive buttonsix operator4"
+	"buttonone buttontwo buttonthree operator1"
+	"buttonzero equaltobutton pointbutton operator2"
+	"clear-button clearbutton clearbutton clearbutton";
+}
+}
